@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="pages/assets/img/thumbnail.png">
+
+    <!--    document Title-->
+    <title>Fluffy Stuff Co. | Product Detail</title>
+
+    <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon_io/favicon-32x32.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="pic/favicon_io/site.webmanifest">  
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--    Stylesheets-->
+    <link href="style.css" rel="stylesheet">
+    <script>
+        var newQuantity;
+        var totalPrice = document.getElementById("total-price-detailPage");
+        function changeQuantity(n){
+            newQuantity = n;
+            document.getElementById("total-price-detailPage").innerHTML = "$ " + 35 * newQuantity;}
+    </script>
+  </head>
+
+
+  <body>
+        <div class="topNav-shop">
+            <a href="index.html"><img src="pic/logo.svg" alt="logo"></a>
+            <a href="index.html">Home</a>
+            <a class="active">Shop</a>
+            <a href="about.html">About</a>
+        </div>
+
+    </br>
+        <a href="shop.html"><img src="pic/back.svg" style="float: left; margin-left: 45px;"></a>
+    </br>
+    </br>
+        <!-- Split the page in half -->
+        <div class="row">
+            <div class="column">
+                <img src="pic/sidepillow.png" style="width: 80%; height: auto;" alt="side pillow detail">
+                <a href="customization.html"><button class="customizebtn2">Customize</button></a>
+
+                <form action="#" style="padding-left: 60px;">
+                    <label for="pillowQuantity">Pillow Quantity</label>
+                    <select name="pillow quantity" id="quantity" onchange="changeQuantity(value);">
+                    <option value="quantity">Select a quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </form>
+                <div style="padding-left: 60px;">
+                    <h4>Total estimate cost</h4>
+                    <h4 id="total-price-detailPage">$ 35.00</h4><br><br>
+                    <a href="cart.html"><button class="addtocartbtn" onclick="addToCart()">Add to Cart</button></a>
+                    <a href="shop.html"><button class="browsebtn">Keep Browsing</button></a>
+                </div>
+                <script>
+                    function addToCart() {
+                        alert("Success!!! Your " + newQuantity + " item(s) is in the cart.");}
+                </script>
+            </div>
+            <div class="column">
+                <!-- Slideshow container -->
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="pic/img1.png" style="width:100%" alt="side pillow picture 1">
+                    </div>
+                
+                    <div class="mySlides fade">
+                        <img src="pic/img2.png" style="width:100%" alt="side pillow picture 2">
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="pic/img3.png" style="width:100%" alt="side pillow picture 3">
+                    </div>
+                
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+    
+
+            </div>
+        </div>
+
+
+
+    <div class="container">
+        <img src="pic/review.png" style="width: 100%; height: auto;" alt="customer review">
+    </div>
+
+    <div class="container">
+        <img src="pic/footer.png" style="width: 100%; height: auto;" alt="footer">
+    </div>
+
+  </body>
+
+  <footer>
+    <!--    JavaScripts for slide carousel-->
+    <script src="sliderscript.js"></script>
+  </footer>
+
+  </html>

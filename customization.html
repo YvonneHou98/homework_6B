@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="pages/assets/img/thumbnail.png">
+
+    <!--    document Title-->
+    <title>Fluffy Stuff Co. | Customization</title>
+
+    <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon_io/favicon-32x32.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="pic/favicon_io/site.webmanifest">  
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="style.css" rel="stylesheet">
+    <script defer src="common.js" type="text/javascript"></script> 
+    <script defer src="customization.js" type="text/javascript"></script> 
+    
+  </head>
+
+
+  <body>
+    <div class="topNav-shop">
+        <a href="index.html"><img src="pic/logo.svg" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a class="active">Shop</a>
+        <a href="about.html">About</a>
+    </div>
+
+    </br>
+        <a href="detail.html"><img src="pic/back.svg" style="float: left; margin-left: 45px;"></a><br>
+        <p style="color: lightgray; padding-left: 50px;">Home / Trending Pillows / Customization</p>
+       
+    <!-- Split the page in half -->
+    <div class="row">
+        <!-- left split -->
+        <div class="column">
+            <img src="pic/cus.svg" alt="customization page title" style="width:50%;padding-left: 50px;">
+            <br>
+            <br>
+            <div style="padding-left: 50px;">
+                <form action="#">
+                    <label for="pillowType">Pillow Type</label>
+                    <select name="pillow type" id="type" onchange="changeType(value);">
+                    <option value="type">Select a pillow type</option>
+                    <option value="Bed Pillow">Bed Pillow</option>
+                    <option value="Couch Pillow">Couch Pillow</option>
+                    <option value="Round Pillow">Round Pillow</option>
+                    <option value="Floor Pouf Pillow">Floor Pouf Pillow</option>
+                    </select>
+                </form>
+                <br>
+                <br>
+                <form action="#">
+                    <label for="pillowColor">Pillow Color</label>
+                    <select name="pillow color" id="color" onchange="changeColor(value);">
+                    <option value="color">Select a pillow color</option>
+                    <option value="Rainy day">🟩&emsp;Rainy day</p></option>
+                    <option value="Morning haze">🌫&emsp;Morning haze</option>
+                    <option value="Cozy denim">🟦&emsp;Cozy denim</option>
+                    <option value="After school special">⬜️&emsp;After school special</option>
+                    </select>
+                </form>
+                <br>
+                <br>
+                <form action="#">
+                    <label for="pillowFill">Pillow Fill</label>
+                    <select name="pillow fill" id="fill" onchange="changeFill(value);">
+                    <option value="fill">Select a pillow fill</option>
+                    <option value="Duck down">Duck down</option>
+                    <option value="Hypoallergenic poly-blend">Hypoallergenic poly-blend</option>
+                    <option value="Memory foam">Memory foam</option>
+                    </select>
+                </form>
+                <br>
+                <br>
+                <form action="#">
+                    <label for="pillowQuantity">Pillow Quantity</label>
+                    <select name="pillow quantity" id="quantity" onchange="changeQuantity(value);">
+                    <option value="quantity">Select a quantity</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    </select>
+                </form>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="column" style="line-height: 5px;">
+                        <h4>Total estimate cost</h4>
+                        <h4 id="total-price">$ 35.00</h4>
+                        <h4 id="prod-type">Selected Type: None</h4>
+                        <h4 id="prod-color">Selected Color: None</h4>
+                        <h4 id="prod-fill">Selected Fill: None</h4>
+                    </div>  
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="cart.html"><button class="addtocartbtn" id="addtocartbtn">Add to Cart</button></a>
+                <a href="shop.html"><button class="browsebtn">Keep Browsing</button></a>
+                
+            </div>
+        </div>
+
+         <!-- right split -->
+        <div class="column">
+            <img id="previewImg" src="pic/nopreview.png" alt="preview" style="width:85%;">
+        </div>
+
+    </div>
+
+
+    <br>
+    <br>
+    <div class="container">
+        <img src="pic/footer.png" style="width: 100%; height: auto;" alt="footer">
+    </div>
+
+
+ </body>
+</html>

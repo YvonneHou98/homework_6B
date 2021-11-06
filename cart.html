@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="pages/assets/img/thumbnail.png">
+
+    <!--    document Title-->
+    <title>Fluffy Stuff Co. | Shopping Cart</title>
+
+    <!--    Favicons-->
+    <link rel="apple-touch-icon" sizes="180x180" href="pic/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="pic/favicon_io/favicon-32x32.png">  
+    <link rel="icon" type="image/png" sizes="16x16" href="pic/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="pic/favicon_io/site.webmanifest">  
+    <meta name="theme-color" content="#ffffff">
+
+    <!--    Stylesheets-->
+    <link href="style.css" rel="stylesheet">
+    <script defer src="common.js" type="text/javascript"></script> 
+    <script defer src="cart.js" type="text/javascript"></script> 
+  </head>
+
+
+  <body>
+    <div class="topNav-shop">
+        <a href="index.html"><img src="pic/logo.svg" alt="logo"></a>
+        <a href="index.html">Home</a>
+        <a class="active">Shop</a>
+        <a href="about.html">About</a>
+    </div>
+
+    </br>
+        <a href="customization.html"><img src="pic/back.svg" style="float: left; margin-left: 45px;"></a>
+    </br>
+    </br>
+        <!-- Split the page in half -->
+        <div class="row">
+            <!-- left split, for cart -->
+            <div class="column" id="cart"> 
+                <img src="pic/cartTitle.png" alt="cart title" style="width:65%; height:auto; margin-left: 30pt;">
+                <br>
+                <br>
+                <template id="cart-item-template">
+                    <div class="cart">
+                        <div class="row">
+                            <div class = "column">
+                            <img class = "product-img" src="pic/preview-After School Special.png" alt="item1" style="width:85%;">
+                            </div>
+                            <div class = "column">
+                                <h3>“THE CUSTOMIZED”</h3>
+                                <h4>$ 35.00 each</h4>
+                                <h4 style="display:inline">Quantity: </h4><h4 class = "product-quantity" style="display:inline;">1</h4>
+                                <p class = "product-type" style = "color: lightgray">Bed Pillow</p>
+                                <p class = "product-fill" style = "color: lightgray">Duck Down</p>
+                                
+                                <p class = "product-color" style = "color: lightgray"> After School Special</p>
+                                <br><br>
+                                <a href="customization.html"><button>Edit</button></a>
+                                <a href="#"><button class= "btn-remove">Delete</button></a>
+                            </div>
+                        </div>
+                        <br><br><br>
+                    </div>
+                </template>
+
+
+
+                <h2 style="display:inline; padding-left: 38px;">Order Total: $</h2><h2 id="total-price" style="display:inline">35.00</h2>
+            </div>
+            <!-- right split, for checkout -->
+            <div class="column"> 
+                <img src="pic/checkout.svg" style="width: 80%; height: auto;" alt="checkout panel">
+            </div>
+        </div>
+        <br>
+        <br>
+
+
+        <div class="container">
+            <img src="pic/footer.png" style="width: 100%; height: auto;" alt="footer">
+        </div>
+  </body>
+
+</html> 
